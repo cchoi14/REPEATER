@@ -10,7 +10,7 @@ function secondsToMS(seconds) {
 
 // this function takes a milisecond interval and plays the looping sound
 function metronome(ms, sound) {
-  setInterval(sound.play(), ms);
+  return setInterval(sound.play(), ms);
 }
 
 // this function checks if the user input is actually a number
@@ -24,7 +24,21 @@ function validateNum(tag) {
   return true;
 }
 
+function start() {
+  // validateNum();
+  // BPMToMS() or secondsToMS()
+  // return metronome()
+}
+
+function stop() {
+  // clearInterval(metronome);
+}
+
 BPMToMS(160);
 secondsToMS(2.7);
+
+debugger;
+
 metronome(BPMToMS(120), beep);
+
 debugger;
