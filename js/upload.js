@@ -38,6 +38,8 @@
                window.alert("Please upload an audio file that is no longer than 5 seconds");
                fileInput.value = '';
                return false;
+             }else{
+               fileValidation();
              }
          });
      };
@@ -50,7 +52,6 @@
      // Read file as an ArrayBuffer, important !
      reader.readAsArrayBuffer(file);
  }, false);
-
 
 // this function checks the type of the uploaded file
  function fileValidation() {
@@ -67,5 +68,16 @@
                 window.alert('Invalid file type - please upload an .mp3 or .wav file');
                 fileInput.value = '';
                 return false;
+            }else{
+              //
+              $("#playBack").css("visibility","visible");
             }
 }
+
+// this function plays back the file if button is pressed
+$("#playBack").click(function(){
+  var files = fileInput.files;
+  var file = URL.createObjectURL(files[0]);
+  audio_player.src = file;
+  audio_player.play();
+})
