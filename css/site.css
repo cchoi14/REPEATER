@@ -3,3 +3,12 @@
 video {
   align-self: left;
 }
+
+#playBack {
+  visibility: hidden;
+  font-size: 125%;
+}
+
+#audio_player {
+  visibility: hidden;
+}
