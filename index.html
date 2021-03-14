@@ -8,40 +8,52 @@
 </head>
 
 <body>
-	<video width="300" height="300" autoplay loop muted>
-		<source src="img/Animation.webm" type="video/webm">
-	</video>
-	<p>A customizable online repeater.</p>
-	<button>START</button><button>STOP</button>
-	<br>
-	<button>CUSTOMIZE</button>
-	<br>
-	<label for="soundPick">choose sound</label>
-	<select name="Pick sound" id="soundPick">
-		<option value="sound1">Sound 1</option>
-		<option value="sound2">Sound 2</option>
-		<option value="sound3">Sound 3</option>
-	</select>
-	<br>
-	<label>or</label>
-	<br>
-	<label for="fileInput">upload your own file</label>
-	<input type="file" id="fileInput" onchange="return fileValidation()" />
-	<br>
-	<label for="interval">interval</label>
-	<input form="text" id="intervalNum">
-	<select name="Pick type" id="intervalType">
-		<option value="BPM">BPM</option>
-		<option value="seconds">Seconds</option>
-	</select>
-	<br>
-	<label for="animation">animation</label>
-	<select name="Pick animation" id="animation">
-		<option value="animation1">Animation1</option>
-		<option value="animation2">Animation2</option>
-		<option value="animation3">Animation3</option>
-	</select>
-	<a class="about" href="about.html">&lt;&lt;ABOUT</a>
+	<div id = content>
+		<body bgcolor="#8B8B7A">
+		<div id = anima>
+			<video width="300" height="300" autoplay loop muted>
+				<source src="img/Animation.webm" type="video/webm">
+			</video>
+		</div>
+
+		<div id = title>
+			<p style = "text-indent: 20px">A customizable online repeater.</p>
+		</div>
+		&emsp;&emsp;&emsp;&nbsp;<button>START</button>
+		&emsp;&emsp;&emsp;&emsp;&emsp;<button>STOP</button>
+		<br><br>
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<button>CUSTOMIZE</button>
+		<br><br>
+		<label for="soundPick">Choose sound</label>&emsp;
+
+		<select name="Pick sound" id="soundPick">
+			<option value="sound1">Sound 1</option>
+			<option value="sound2">Sound 2</option>
+			<option value="sound3">Sound 3</option>
+		</select>
+
+		<label>&emsp;or</label>
+		<br>
+		<label for="fileInput">Upload your own file</label>
+
+		<input type="file" id="fileInput" onchange="return fileValidation()" />
+		<br>
+		<label for="interval">Interval</label>
+		<input form="text" id="intervalNum">
+		<select name="Pick type" id="intervalType">
+			<option value="BPM">BPM</option>
+			<option value="seconds">Seconds</option>
+		</select>
+		<br>
+		<label for="animation">Animation</label>
+		<select name="Pick animation" id="animation">
+			<option value="animation1">Animation1</option>
+			<option value="animation2">Animation2</option>
+			<option value="animation3">Animation3</option>
+		</select>
+  </div>
+	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+	<a font-family = "Georgia;" class="about" href="about.html">ABOUT&gt;&gt;</a>
 </body>
 
 </html>
