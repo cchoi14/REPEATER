@@ -3,3 +3,25 @@
 video {
   align-self: left;
 }
+
+#anima{
+  background-color: #607B8B;
+  width: 300px;
+  min-height: 150px;
+  padding: 10px;
+  margin: 10px;
+  border: solid 1px #444444;
+  font-size: 20px;
+}
+#content{
+  background-color: #B5B5B5;
+  width: 350px;
+  min-height: 200px;
+  padding: 10px;
+  margin: 10px;
+  border: solid 1px #444444;
+  font-size: 20px;
+}
+#title{
+  font-weight: bold;
+}
