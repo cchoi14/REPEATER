@@ -1,3 +1,8 @@
+// slow fade in to screen
+$(document).ready(function(){
+  $('body').fadeIn("slow");
+});
+
 // this function takes an input in BPM and converts it to miliseconds
 function BPMToMS(BPM) {
   return (60000 / BPM);
