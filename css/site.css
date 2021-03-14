@@ -12,3 +12,9 @@ video {
 #audio_player {
   visibility: hidden;
 }
+
+body{
+  background-color: black;
+  color: white;
+  display: none;
+}
