@@ -1,3 +1,8 @@
+// variable declarations
+var intervalNum;
+var interval;
+var sound;
+
 // slow fade in to screen
 $(document).ready(function(){
   $('body').fadeIn("slow");
@@ -13,37 +18,47 @@ function secondsToMS(seconds) {
   return (seconds * 1000);
 }
 
-// this function takes a milisecond interval and plays the looping sound
-function metronome(ms, sound) {
-  return setInterval(sound.play(), ms);
-}
-
-// this function checks if the user input is actually a number
-// alerts user if it is not a number and returns false to stop the rest of the
-// functions from being called
-function validateNum(tag) {
-  if ( $("#" + tag).value().isNaN() ) {
-    window.alert(tag + "is not a number!");
-    return false;
-  }
-  return true;
-}
-
 function start() {
-  // validateNum();
-  // BPMToMS() or secondsToMS()
-  // return metronome()
+  // grabs interval and checks if it is a number. if not, ends function and alerts user.
+  var temp = $('#intervalNum').val();
+  if ( temp == 0 || isNaN(temp) ) {
+      window.alert("Please enter a number for the interval.");
+      return false;
+  }
+
+  // checks if selector is at BPM or seconds then converts to miliseconds
+  if ( $('#intervalType').val() == "BPM" ) {
+    intervalNum = BPMToMS(temp);
+  } else if ( $('#intervalType').val() == "seconds" ) {
+    intervalNum = secondsToMS(temp);
+  }
+
+  // reads user sound selection from menu
+  if ( $('#soundPick').val() == 'sound1' ) {
+    sound = new Audio('./sounds/sound1.wav');
+  } else if ( $('#soundPick').val() == 'sound2' ) {
+    sound = new Audio('./sounds/sound2.wav');
+  } else if ( $('#soundPick').val() == 'sound3' ) {
+    sound = new Audio('./sounds/sound3.wav');
+  }
+
+  // starts playing the repeating sound at interval
+  if (interval) {
+    stop();
+  }
+  interval = setInterval(function() {
+    sound.play()
+  }, intervalNum);
 }
 
 function stop() {
-  // clearInterval(metronome);
+  // stops the interval
+  clearInterval(interval);
 }
 
-BPMToMS(160);
-secondsToMS(2.7);
-
-debugger;
-
-metronome(BPMToMS(120), beep);
-
-debugger;
+$("#start").click(function() {
+  start();
+})
+$("#stop").click(function() {
+  stop();
+})
