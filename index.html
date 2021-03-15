@@ -5,21 +5,27 @@
 	<title>Group 9 - REPEATER</title>
 	<link rel="stylesheet" type="text/css" href="css/site.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 	<script src="js/site.js" defer></script>
 	<script src="js/upload.js" defer></script>
-	<script src="js/preview.js" defer></script>
 </head>
 
 <body>
-	<div id = content>
+	<div id="preview">
+		<div id="previewTitle"><h1>REPEATER</h1></div>
+		<div id="description"><p>– an online customizable metronome –</p></div>
+		<button id="previewButton">continue</button>
+	</div>
+	<div id="content">
 		<body bgcolor="#8B8B7A">
-		<div id = anima>
+		<div id="anima">
 			<video width="300" height="300" autoplay loop muted>
 				<source src="img/Animation.webm" type="video/webm">
 			</video>
 		</div>
 
-		<div id = title>
+		<div id="title">
 			<p style = "text-indent: 20px">A customizable online repeater.</p>
 		</div>
 		&emsp;&emsp;&emsp;&nbsp;<button id="start">START</button>
@@ -41,7 +47,7 @@
 
 		<input type="file" id="fileInput" onchange="return fileValidation()" />
 		<button id="playBack">Test Audio</button>
-      		<audio controls id="audio_player"></audio>	
+      		<audio controls id="audio_player"></audio>
 		<br>
 		<label for="interval">Interval</label>
 		<input form="text" id="intervalNum">
@@ -56,9 +62,10 @@
 			<option value="animation2">Animation2</option>
 			<option value="animation3">Animation3</option>
 		</select>
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		<a id="about" href="about.html">ABOUT</a>
   </div>
-	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-	<a font-family = "Georgia;" class="about" href="about.html">ABOUT&gt;&gt;</a>
+
 </body>
 
 </html>
