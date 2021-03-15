@@ -4,6 +4,13 @@ video {
   align-self: left;
 }
 
+.center {
+  margin: auto;
+  width: 35%;
+  border: 1px transparent;
+  padding: 5px;
+}
+
 #anima{
   background-color: #607B8B;
   width: 300px;
@@ -13,8 +20,9 @@ video {
   border: solid 1px #444444;
   font-size: 20px;
 }
+
 #content{
-  background-color: #B5B5B5;
+  background-color: #D9B3FF;
   width: 350px;
   min-height: 200px;
   padding: 10px;
@@ -22,6 +30,21 @@ video {
   border: solid 1px #444444;
   font-size: 20px;
 }
+
 #title{
+  text-align: center;
   font-weight: bold;
+}
+#fileInput{
+  font-family: 'Abril Fatface';
+  display: inline-block;
+}
+
+#playBack {
+  visibility: hidden;
+  font-family: 'Abril Fatface';
+}
+
+#audio_player {
+  visibility: hidden;
 }
