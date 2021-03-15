@@ -1,16 +1,61 @@
 <!DOCTYPE html>
-<<<<<<< Updated upstream
-<html>
-
-<head>
-	<title>REPEATER</title>
+	<title>Group 9 - REPEATER</title>
 	<link rel="stylesheet" type="text/css" href="css/site.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/site.js" defer></script>
 	<script src="js/upload.js" defer></script>
+	<script src="js/preview.js" defer></script>
 </head>
 
 <body>
-	<input type="file" id="fileInput"
-      	onchange="return fileValidation()"/>
+	<div id = content>
+		<body bgcolor="#8B8B7A">
+		<div id = anima>
+			<video width="300" height="300" autoplay loop muted>
+				<source src="img/Animation.webm" type="video/webm">
+			</video>
+		</div>
+
+		<div id = title>
+			<p style = "text-indent: 20px">A customizable online repeater.</p>
+		</div>
+		&emsp;&emsp;&emsp;&nbsp;<button id="start">START</button>
+		&emsp;&emsp;&emsp;&emsp;&emsp;<button id="stop">STOP</button>
+		<br><br>
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<button>CUSTOMIZE</button>
+		<br><br>
+		<label for="soundPick">Choose sound</label>&emsp;
+
+		<select name="Pick sound" id="soundPick">
+			<option value="sound1">Sound 1</option>
+			<option value="sound2">Sound 2</option>
+			<option value="sound3">Sound 3</option>
+		</select>
+
+		<label>&emsp;or</label>
+		<br>
+		<label for="fileInput">Upload your own file</label>
+
+		<input type="file" id="fileInput" onchange="return fileValidation()" />
+		<button id="playBack">Test Audio</button>
+      		<audio controls id="audio_player"></audio>
+		<br>
+		<label for="interval">Interval</label>
+		<input form="text" id="intervalNum">
+		<select name="Pick type" id="intervalType">
+			<option value="BPM">BPM</option>
+			<option value="seconds">Seconds</option>
+		</select>
+		<br>
+		<label for="animation">Animation</label>
+		<select name="Pick animation" id="animation">
+			<option value="animation1">Animation1</option>
+			<option value="animation2">Animation2</option>
+			<option value="animation3">Animation3</option>
+		</select>
+  </div>
+	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+	<a font-family = "Georgia;" class="about" href="about.html">ABOUT&gt;&gt;</a>
 </body>
 
 </html>
