@@ -25,3 +25,25 @@ video {
 #title{
   font-weight: bold;
 }
+
+#fileInput{
+  border: double;
+  border-color: #361E14;
+  background-color: #C4F590;
+  font-family: 'Abril Fatface';
+  font-size: 125%;
+  display: inline-block;
+}
+
+#playBack {
+  visibility: hidden;
+  border: double;
+  border-color: #361E14;
+  background-color: #C4F590;
+  font-family: 'Abril Fatface';
+  font-size: 125%;
+}
+
+#audio_player {
+  visibility: hidden;
+}
