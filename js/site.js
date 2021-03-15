@@ -1,12 +1,39 @@
+// fades in everything
+$(document).ready(function(){
+  $("#previewTitle h1").fadeIn(3000);
+  descriptLoad();
+  buttonLoad();
+});
+
+//loads site description
+function descriptLoad(){
+  setTimeout(function() {
+    $("#description").fadeIn(3000);
+  },2000);
+}
+
+// loads button
+function buttonLoad(){
+  setTimeout(function() {
+    $("#previewButton").fadeIn(1500);
+  },4000);
+}
+
+// what happens when you click on continue
+$('#previewButton').click(function() {
+  // fades out and loads index.html
+  $('#preview').fadeOut(1000, function() {
+    $('#preview').style('display: none');
+  });
+  setTimeout(function() {
+      $('#content').fadeIn(2000);
+  },2000)
+})
+
 // variable declarations
 var intervalNum;
 var interval;
 var sound;
-
-// slow fade in to screen
-$(document).ready(function(){
-  $('body').fadeIn("slow");
-});
 
 // this function takes an input in BPM and converts it to miliseconds
 function BPMToMS(BPM) {
