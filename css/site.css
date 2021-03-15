@@ -1,5 +1,55 @@
 <!DOCTYPE CSS>
 
+#previewTitle {
+  display: none;
+}
+
+#previewTitle h1 {
+  display: none;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 500%;
+  color: white;
+  text-align: center;
+}
+
+#description {
+  display: none;
+  margin-top: 0px;
+  padding-top: 0px;
+  font-family: 'Abril Fatface', cursive;
+  color: white;
+  font-size: 200%;
+  text-align: center;
+}
+
+#previewButton {
+  position: absolute;
+  font-family: 'Abril Fatface', cursive;
+  top: 67%;
+  left: 45%;
+  display: none;
+  color: white;
+  border: double;
+  border-color: white;
+  background-color: black;
+  font-size: 170%;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#previewButton:hover {
+  background-color: white;
+  color: black;
+}
+
+p {
+  margin-top: 0px;
+}
+
+body {
+  background-color: black;
+}
+
 video {
   align-self: left;
 }
@@ -13,6 +63,7 @@ video {
   border: solid 1px #444444;
   font-size: 20px;
 }
+
 #content{
   background-color: #B5B5B5;
   width: 350px;
@@ -21,9 +72,7 @@ video {
   margin: 10px;
   border: solid 1px #444444;
   font-size: 20px;
-}
-#title{
-  font-weight: bold;
+  display: none;
 }
 
 #fileInput{
