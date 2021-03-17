@@ -48,7 +48,7 @@ a{
   width: 1000px;
   min-height: 100px;
   padding: 10px;
-  margin: 10px;
+  margin: auto;
   border: solid 1px #444444;
   font-size: 20px;
 }
