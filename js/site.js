@@ -67,6 +67,14 @@ function start() {
     sound = new Audio('./sounds/sound2.wav');
   } else if ( $('#soundPick').val() == 'sound3' ) {
     sound = new Audio('./sounds/sound3.wav');
+  } else if ( $('#soundPick').val() == 'sound4' ) {
+    sound = new Audio('./sounds/Sound4.wav');
+  } else if ( $('#soundPick').val() == 'sound5' ) {
+    sound = new Audio('./sounds/Sound5.wav');
+  } else if ( $('#soundPick').val() == 'sound6' ) {
+    sound = new Audio('./sounds/Sound6.wav');
+  } else if ( $('#soundPick').val() == 'sound7' ) {
+    sound = new Audio('./sounds/Sound7.wav');
   }
 
   // starts playing the repeating sound at interval
