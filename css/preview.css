@@ -27,8 +27,8 @@ h1{
 .button {
   position: absolute;
   font-family: 'Abril Fatface', cursive;
-  top: 67%;
-  left: 45%;
+  margin-top: 40px;
+  margin-left: 45%;
   display: none;
   color: white;
   border: double;
