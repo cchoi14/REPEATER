@@ -74,7 +74,7 @@ function start() {
   } else if ( $('#soundPick').val() == 'sound6' ) {
     sound = new Audio('./sounds/Sound6.wav');
   } else if ( $('#soundPick').val() == 'sound7' ) {
-    sound = new Audio('./sounds/Sound7.wav');
+    sound = new Audio('./sounds/Sound7.mp3');
   }
 
   // starts playing the repeating sound at interval
