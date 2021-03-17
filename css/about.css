@@ -53,6 +53,11 @@ a{
   font-size: 20px;
 }
 
+#text p{
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+}
+
 #content{
   text-align: center;
   background-color: #efebdc;
