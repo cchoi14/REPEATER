@@ -91,9 +91,9 @@ function stop() {
   clearInterval(interval);
 }
 
-$("#start").click(function() {
+$(".start").click(function() {
   start();
 })
-$("#stop").click(function() {
+$(".stop").click(function() {
   stop();
 })
