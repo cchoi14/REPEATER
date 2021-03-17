@@ -10,10 +10,6 @@ body {
   width: 50%
 }
 
-#previewTitle {
-  display: none;
-}
-
 #previewTitle h1 {
   display: none;
   font-family: 'Abril Fatface', cursive;
