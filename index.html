@@ -12,76 +12,83 @@
 
 <body>
 	<div id="preview">
-		<div id="previewTitle"><h1>REPEATER</h1></div>
-		<div id="description"><p>– an online customizable metronome –</p></div>
+		<div id="previewTitle">
+			<h1>REPEATER</h1>
+		</div>
+		<div id="description">
+			<p>– an online customizable metronome –</p>
+		</div>
 		<button id="previewButton">continue</button>
 	</div>
-<div class="center">
-	<div id="content">
-		<body bgcolor="#8B8B7A">
-		<div id="anima">
-			<video id="video1" width="300" height="300" muted>
-				<source id="video1source" src="img/blue.webm" type="video/webm">
-			</video>
-		</div>
+	<div class="center">
+		<div id="content">
 
-		<div id="title">
-			<p><i>An online customizable metronome</i></p>
+			<body bgcolor="#8B8B7A">
+				<div id="anima">
+					<video id="video1" width="300" height="300" muted>
+						<source id="video1source" src="img/blue.webm" type="video/webm">
+					</video>
+				</div>
+
+				<div id="title">
+					<p><i>An online customizable metronome</i></p>
+				</div>
+				&emsp;&emsp;&emsp;&nbsp;
+				<div id="startStop">
+					<button class="start">START</button>
+					<button class="stop">STOP</button>
+				</div>
+				<br>
+				<br>
+				<br>
+				<div id="pickASound">
+					<label for="soundPick" class="choose">Choose a sound</label>&emsp;
+					<br>
+					<select name="Pick sound" id="soundPick">
+						<option value="sound1">Sound 1</option>
+						<option value="sound2">Sound 2</option>
+						<option value="sound3">Sound 3</option>
+						<option value="sound4">Sound 4</option>
+						<option value="sound5">Sound 5</option>
+						<option value="sound6">Sound 6</option>
+						<option value="sound7">Sound 7</option>
+					</select>
+				</div>
+				<br>
+				<div id="or">
+					<label>&emsp;or</label>
+				</div>
+				<br>
+				<label for="fileInput" class="upYours">Upload your own file</label>
+				<br>
+				<input type="file" id="fileInput" onchange="return fileValidation()" />
+				<button id="playBack">Test Audio</button>
+				<br>
+				<div id="inter">
+					<label for="interval">Interval</label><br>
+					<label style="font-size: 11px">WARNING: Intervals shorter than 0.2s (300 BPM) can get very loud.</label>
+					<br>
+					<input form="text" id="intervalNum">
+					<select name="Pick type" id="intervalType">
+						<option value="seconds">Seconds</option>
+						<option value="BPM">BPM</option>
+					</select>
+					<br>
+				</div>
+				<br>
+				<div id="ani">
+					<label for="animation">Animation</label>
+					<select name="Pick animation" id="animation">
+						<option value="animation1">Animation1</option>
+						<option value="animation2">Animation2</option>
+						<option value="animation3">Animation3</option>
+						<option value="animation4">Animation4</option>
+					</select>
+				</div>
+				<audio controls id="audio_player"></audio>
+				<a id="about" href="about.html">ABOUT US</a>
 		</div>
-		&emsp;&emsp;&emsp;&nbsp;
-		<div id="startStop">
-			<button class="start">START</button>
-			<button class="stop">STOP</button>
-		</div>
-		<br>
-		<br>
-		<br>
-		<div id="pickASound">
-			<label for="soundPick" class="choose">Choose a sound</label>&emsp;
-			<br>
-			<select name="Pick sound" id="soundPick">
-				<option value="sound1">Sound 1</option>
-				<option value="sound2">Sound 2</option>
-				<option value="sound3">Sound 3</option>
-				<option value="sound4">Sound 4</option>
-				<option value="sound5">Sound 5</option>
-				<option value="sound6">Sound 6</option>
-				<option value="sound7">Sound 7</option>
-			</select>
-		</div>
-		<br>
-		<div id="or">
-			<label>&emsp;or</label>
-		</div>
-		<br>
-		<label for="fileInput" class="upYours">Upload your own file</label>
-		<br>
-		<input type="file" id="fileInput" onchange="return fileValidation()" />
-		<button id="playBack">Test Audio</button>
-		<br>
-		<div id="inter">
-			<label for="interval">Interval</label>
-			<input form="text" id="intervalNum">
-			<select name="Pick type" id="intervalType">
-				<option value="BPM">BPM</option>
-				<option value="seconds">Seconds</option>
-			</select>
-			<br>
-		</div>
-		<br>
-		<div id="ani">
-			<label for="animation">Animation</label>
-			<select name="Pick animation" id="animation">
-				<option value="animation1">Animation1</option>
-				<option value="animation2">Animation2</option>
-				<option value="animation3">Animation3</option>
-				<option value="animation4">Animation4</option>
-			</select>
-		</div>
-		<audio controls id="audio_player"></audio>
-		<a id="about" href="about.html">ABOUT US</a>
-  </div>
-</div>
+	</div>
 
 </body>
 

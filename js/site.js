@@ -170,6 +170,9 @@ function start() {
   }
   var animation = document.getElementById("video1");
   interval = setInterval(function() {
+    // "stops" then plays sound and audio
+    sound.pause();
+    sound.currentTime = 0;
     sound.play();
     animation.pause();
     animation.currentTime = 0;

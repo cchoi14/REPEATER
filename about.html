@@ -1,50 +1,65 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title >REPEATER - ABOUT US</title>
+	<title>REPEATER - ABOUT US</title>
 	<link rel="stylesheet" type="text/css" href="css/about.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-	<div id = content>
-		<h1 style = "text-indent: 40px">ABOUT US</h1>
-		<div id = "members">
-		<body bgcolor="black">
-			<h2 style = "text-indent: 50px">Group #9 Members + Site Creators:</h2>
-			<p style="color:blue">
-				<a href="https://cchoi14.github.io/art101/">Johnny Choi</a>
-				<br><br>&nbsp;&nbsp;
-				<a href="https://tridun.github.io/art101/">Tristan Dunlop</a>
-				<br><br>&nbsp;&nbsp;
-				<a href="https://heliafotoohi.github.io/art101/">Helia Fotoohi</a>
-				<br><br>&nbsp;&nbsp;
-				<a href="https://plizunov.github.io/art101-petr/">Petr Lizunov</a>
-			  <br><br>&nbsp;&nbsp;
-				<a href="https://flemington123.github.io/Art101/">Xuqi Wang</a>
-			</p>
+	<div id=content>
+		<h1 style="text-indent: 40px">ABOUT US</h1>
+		<div id="members">
+
+			<body bgcolor="black">
+				<h2 style="text-indent: 50px">Group #9 Members + Site Creators:</h2>
+				<p style="color:blue">
+					<a href="https://cchoi14.github.io/art101/">Johnny Choi</a>
+					<br><br>&nbsp;&nbsp;
+					<a href="https://tridun.github.io/art101/">Tristan Dunlop</a>
+					<br><br>&nbsp;&nbsp;
+					<a href="https://heliafotoohi.github.io/art101/">Helia Fotoohi</a>
+					<br><br>&nbsp;&nbsp;
+					<a href="https://plizunov.github.io/art101-petr/">Petr Lizunov</a>
+					<br><br>&nbsp;&nbsp;
+					<a href="https://flemington123.github.io/Art101/">Xuqi Wang</a>
+				</p>
 		</div>
 
-		<hr/>
-		<div id = "text">
-			<h2 style = "text-indent: 50px">ABOUT OUR SITE:</h2>
-		<p> For our Final Team Project, we created our interactive website,
-				Repeater: an online customizable metronome. Our site allows users to
-				upload their own sounds and play them at the time interval of their
-				choosing, whether it is in beats per minute or per second. Repeater also
-				includes animations as visual representations of the sound being played,
-				to help users visualize the speed of the metronome. Our sites main function can be
-				utilized in a variety of ways, and we've aimed to create a website that
-				can be modified to a specific users experience. Repeater was created by
-				UCSC ART 101 students Johnny Choi, Tristan Dunlop, Helia Fotoohi,
-				Petr Lizunov, and Xuqi Wang.</p>
+		<hr />
+		<div id="text">
+			<h2>ABOUT OUR SITE:</h2>
+			<p>REPEATER: an online customizable metronome is a student project created by the above students from UC Santa Cruz
+				for the class ART101 during Winter 2021.
+				<br>
+				<br>
+				REPEATER is a highly customizable website that allows users to upload their own sounds and define how often they play,
+				choose a helpful animation to help visualize the timing,
+				and does the BPM to seconds calculation for you, so it's convenient to use as a metronome.
+				REPEATER's biggest strength is that it is highly customizable so that it can be
+				utilized in a variety of ways and tailored to a user's preferences.
+				<br>
+				<br>
+				Shoutouts to our wonderful TA Brock and instructor Wes for helping us
+				learn how to create this site.
+				<br>
+				<br>
+				Known Bugs:
+				<br>
+				Some audio clips and animations may not seem like they're playing at all at shorter (0.25s / 240 BPM)
+				intervals. They actually are playing, but they're being refreshed too fast (playing only the blank beginning)
+				because of the way we coded them (sound and animations don't overlap, they stop the previous instance).
+			</p>
 		</div>
-		<hr/>
-		<a class="homelink" href="index.html">&lt;&lt; BACK</a>
+		<hr />
+		<a class="homelink" href="index.html">&lt;&lt; BACK TO SITE</a>
 	</div>
 
 </body>
+
 </html>
