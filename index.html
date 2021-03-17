@@ -27,50 +27,59 @@
 		</div>
 
 		<div id="title">
-			<p style = "text-indent: -5px">A customizable online repeater</p>
+			<p><i>An online customizable metronome</i></p>
 		</div>
 		&emsp;&emsp;&emsp;&nbsp;
-		<button id="start">START</button>
-		&emsp;&emsp;&emsp;&emsp;&emsp;
-		<button id="stop">STOP</button>
-		<br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
-		<button>CUSTOMIZE</button>
-		<br><br>
-		<label for="soundPick">Choose sound</label>&emsp;
-
-		<select name="Pick sound" id="soundPick">
-			<option value="sound1">Sound 1</option>
-			<option value="sound2">Sound 2</option>
-			<option value="sound3">Sound 3</option>
-			<option value="sound4">Sound 4</option>
-			<option value="sound5">Sound 5</option>
-			<option value="sound6">Sound 6</option>
-			<option value="sound7">Sound 7</option>
-		</select>
-
-		<label>&emsp;or</label>
+		<div id="startStop">
+			<button class="start">START</button>
+			<button class="stop">STOP</button>
+		</div>
 		<br>
-		<label for="fileInput">Upload your own file</label>
-
+		<br>
+		<br>
+		<div id="pickASound">
+			<label for="soundPick" class="choose">Choose a sound</label>&emsp;
+			<br>
+			<select name="Pick sound" id="soundPick">
+				<option value="sound1">Sound 1</option>
+				<option value="sound2">Sound 2</option>
+				<option value="sound3">Sound 3</option>
+				<option value="sound4">Sound 4</option>
+				<option value="sound5">Sound 5</option>
+				<option value="sound6">Sound 6</option>
+				<option value="sound7">Sound 7</option>
+			</select>
+		</div>
+		<br>
+		<div id="or">
+			<label>&emsp;or</label>
+		</div>
+		<br>
+		<label for="fileInput" class="upYours">Upload your own file</label>
+		<br>
 		<input type="file" id="fileInput" onchange="return fileValidation()" />
 		<button id="playBack">Test Audio</button>
-      		<audio controls id="audio_player"></audio>
 		<br>
-		<label for="interval">Interval</label>
-		<input form="text" id="intervalNum">
-		<select name="Pick type" id="intervalType">
-			<option value="BPM">BPM</option>
-			<option value="seconds">Seconds</option>
-		</select>
+		<div id="inter">
+			<label for="interval">Interval</label>
+			<input form="text" id="intervalNum">
+			<select name="Pick type" id="intervalType">
+				<option value="BPM">BPM</option>
+				<option value="seconds">Seconds</option>
+			</select>
+			<br>
+		</div>
 		<br>
-		<label for="animation">Animation</label>
-		<select name="Pick animation" id="animation">
-			<option value="animation1">Animation1</option>
-			<option value="animation2">Animation2</option>
-			<option value="animation3">Animation3</option>
-		</select>
-		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-		<a id="about" href="about.html">ABOUT</a>
+		<div id="ani">
+			<label for="animation">Animation</label>
+			<select name="Pick animation" id="animation">
+				<option value="animation1">Animation1</option>
+				<option value="animation2">Animation2</option>
+				<option value="animation3">Animation3</option>
+			</select>
+		</div>
+		<audio controls id="audio_player"></audio>
+		<a id="about" href="about.html">ABOUT US</a>
   </div>
 </div>
 
