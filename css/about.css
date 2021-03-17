@@ -64,7 +64,7 @@ a{
   width: 1050px;
   min-height: 150px;
   padding: 10px;
-  margin: 10px;
+  margin: auto;
   border: solid 1px #444444;
   font-size: 20px;
 }
